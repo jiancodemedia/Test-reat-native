@@ -15,7 +15,7 @@ export default function Footer({ navigation }) {
                 name="user"
                 size={50}
                 color="#141414"
-                onPress={() => navigation.navigate('UserPage')}
+                onPress={() => navigation.navigate('USER')}
             />
             <Icon 
                 name="book"
@@ -24,7 +24,7 @@ export default function Footer({ navigation }) {
                 onPress={() => navigation.navigate('ItinerariesPage')}
             />
             <Icon 
-                name="bars"
+                name="skin"
                 size={50}
                 color="#141414"
                 onPress={() => navigation.navigate('PackingPage')}

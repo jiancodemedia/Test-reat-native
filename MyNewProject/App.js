@@ -5,6 +5,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import HomePage from './src/Pages/HomePage'
 import ChosenTask from './src/Pages/ChosenTask'
+import USER from './src/Pages/USER';
 
 const Stack = createNativeStackNavigator();
 
@@ -30,6 +31,10 @@ export default function App() {
 
         <Stack.Screen name="ChosenTask" options={{ headerShown: false }}>
           {props => <ChosenTask {...props} GlobalState={GlobalState} />}
+        </Stack.Screen>
+
+        <Stack.Screen name="USER" options={{ headerShown: false }}>
+          {props => <USER {...props} GlobalState={GlobalState} />}
         </Stack.Screen>
 
       </Stack.Navigator>
