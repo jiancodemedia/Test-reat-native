@@ -7,20 +7,39 @@ export default function Footer({ navigation }) {
         <View style={styles.footer}>
             <Icon 
                 name="home"
-                size={30}
+                size={50}
                 color="#141414"
                 onPress={() => navigation.navigate('HomePage')}
             />
+             <Icon 
+                name="user"
+                size={50}
+                color="#141414"
+                onPress={() => navigation.navigate('UserPage')}
+            />
+            <Icon 
+                name="book"
+                size={50}
+                color="#141414"
+                onPress={() => navigation.navigate('ItinerariesPage')}
+            />
+            <Icon 
+                name="bars"
+                size={50}
+                color="#141414"
+                onPress={() => navigation.navigate('PackingPage')}
+            />
         </View>
+        
     )
 }
 
 const styles = StyleSheet.create({
     footer: {
-        flex: 1,
+        flexDirection: 'row',
         width: '100%',
         alignItems: 'center',
-        justifyContent: 'center',
+        justifyContent: 'space-around',
         backgroundColor: 'white',
         shadowColor: "#000",
         shadowOffset: {
@@ -34,8 +53,8 @@ const styles = StyleSheet.create({
         borderTopWidth: 1,
         borderTopColor: '#14141410'
     },
-    text: {
-        fontSize: 18,
-        fontWeight: '900'
+    icon: {
+        marginLeft: 20,
+        marginRight: 20
     }
 })
